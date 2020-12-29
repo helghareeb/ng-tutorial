@@ -1,0 +1,27 @@
+<div class="container">
+    <p>Reddit Clone</p>
+
+    <form>
+        <h3>Add a Link</h3>
+
+        <div>
+            <label for="title">Title:</label>
+            <input type="text" name="title" id="title" #newTitle>
+        </div>
+        <div>
+            <label for="link">Link:</label>
+            <input type="text" id="link" #newLink>
+        </div>
+
+        <button (click)='addArticle(newTitle, newLink)' class="btn waves-effect waves-light">Submit link</button>
+    </form>
+
+    <hr>
+    <ul>
+        <li *ngFor="let article of articles">
+            <app-article [article]='article'></app-article>
+        </li>
+    </ul>
+
+
+</div>

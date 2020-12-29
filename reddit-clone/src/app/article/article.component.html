@@ -1,0 +1,12 @@
+<div class="container">
+    <div>
+        Points: {{ article.votes }}
+    </div>
+    <div>
+        <a href="{{ article.link }}"> {{ article.title }} </a>
+    </div>
+    <div>
+        <button (click)='voteUp()' class="btn waves-effect waves-light">up vote</button>
+        <button href (click)='voteDown()' class="btn waves-effect waves-light">down vote</button>
+    </div>
+</div>
