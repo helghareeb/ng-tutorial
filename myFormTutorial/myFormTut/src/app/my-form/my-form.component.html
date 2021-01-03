@@ -1,0 +1,10 @@
+<div>
+    <h2>Demo Form: Enter your Name</h2>
+    <form #f='ngForm' (ngSubmit)='onSubmit(f.value)'>
+        <div>
+            <label for="nameInput">Name</label>
+            <input type="text" id='nameInput' placeholder="Your Name" name='nameInput' ngModel>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</div>
