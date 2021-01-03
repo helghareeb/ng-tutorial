@@ -1,0 +1,5 @@
+<hr>
+<ul *ngFor="let product of products" (click)='productWasSelected(product)'>
+    <app-product-row [product]='product'></app-product-row>
+    <hr />
+</ul>
